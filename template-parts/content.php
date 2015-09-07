@@ -50,9 +50,9 @@ if ( is_singular( get_post_type() ) ) :
 		<div class="screen-reader-text" itemprop="datePublished" itemtype="https://schema.org/Date"><?php echo get_the_date('Y-m-d'); ?></div>
 
 		<?php $show_entry_footer = apply_filters( 'hoot_show_entry_footer', true ); ?>
-		<?php if ( $show_entry_footer && 'bottom' == hoot_get_option( 'post_meta_location' ) && !is_attachment() ): ?>
+		<?php if ( $show_entry_footer && 'bottom' != hoot_get_option( 'post_meta_location' ) && !is_attachment() ): ?>
 			<footer class="entry-footer">
-				<?php hoot_meta_info_blocks( hoot_get_option('post_meta') ); ?>
+				<?php hoot_meta_info_blocks( array( 'author' => false, 'date' => false, 'cats' => true, 'tags' => true, 'comments' => true ) ); ?>
 			</footer><!-- .entry-footer -->
 		<?php endif; ?>
 

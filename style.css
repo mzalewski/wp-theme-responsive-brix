@@ -13,7 +13,7 @@ Text Domain: responsive-brix
 /**
  * -----------------------------------------------------------------------------------------------
  * PLEASE DO NOT MODIFY THIS FILE DIRECTLY UNLESS YOU KNOW WHAT YOU ARE DOING
- * 
+ *
  * If you want to add/modify custom CSS styles, you can copy the style rule from the CSS file into
  * the Child Theme's stylesheet
  * @see http://codex.wordpress.org/Child_Themes
@@ -1487,6 +1487,7 @@ body {
   border: solid 1px #dddddd;
   border-right: none;
   border-left: none;
+  z-index: 100;
 }
 #header:before {
   position: absolute;
@@ -1507,6 +1508,10 @@ body {
   width: 60%;
   background: #ffffff;
 }
+#header .table.grid-span-12 {
+  padding: 0px;
+}
+
 /*** Responsive Header ***/
 @media only screen and (max-width: 799px) {
   #header:before,
@@ -1525,12 +1530,13 @@ body {
 }
 /************* Logo *************/
 #site-logo {
-  padding: 15px 23px 13px 0;
   min-width: 220px;
   max-width: 100%;
   display: inline-block;
   vertical-align: top;
   height: 100%;
+  align-items: center;
+  display: inline-flex;
 }
 /*** Text Logo ***/
 #site-title {
@@ -1599,6 +1605,9 @@ body {
 }
 /*** Responsive Logo ***/
 @media only screen and (max-width: 799px) {
+ .partner-logo {
+    display: none;
+ }
   #site-logo {
     display: block;
     padding-right: 0;

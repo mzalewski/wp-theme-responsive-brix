@@ -34,16 +34,15 @@ wp_head();
 								// Display the Image Logo or Site Title
 								hoot_logo();
 								?>
+								<div class="partner-logo"><a href="http://aws.amazon.com"><img src="//d13vhgz95ul9hy.cloudfront.net/img/awsPartner.png?v=buxcz8" alt="AWS Technology Partner" ></a></div>
 							</div>
 						</div><!-- #branding -->
-
 						<div id="header-aside" class="table-cell-mid">
 							<?php
 							// Loads the template-parts/menu-primary.php template.
 							hoot_get_menu( 'primary' );
 							?>
 						</div>
-
 					</div>
 				</div>
 			</div>

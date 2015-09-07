@@ -12,5 +12,21 @@
 
 	<?php wp_footer(); // WordPress hook for loading JavaScript, toolbar, and other things in the footer. ?>
 
+<script>
+jQuery(function(){
+	// Check the initial Poistion of the Sticky Header
+	var stickyHeaderTop = jQuery('#header').offset().top;
+
+	jQuery(window).scroll(function(){
+		if( jQuery(window).scrollTop() > stickyHeaderTop ) {
+			jQuery('#header').css({position: 'fixed', top: '0px', 'background-color': 'white', width: '100%' });
+			jQuery('#site-title img').css({ height: '50px' });
+		} else {
+			jQuery('#header').css({position: 'static', top: '0px'});
+			jQuery('#site-title img').css({ height: 'auto' });
+		}
+	});
+});
+</script>
 </body>
 </html>
