@@ -1387,7 +1387,7 @@ body {
  */
 /************* Topbar *************/
 #topbar {
-  color: #aaaaaa;
+  color: black;
 }
 #topbar ul,
 #topbar ol,
@@ -1425,7 +1425,7 @@ body {
   margin-bottom: -1px;
 }
 .topbar-right-inner .social-icons-widget .social-icons-icon {
-  color: #aaaaaa;
+  color: black;
   line-height: inherit;
   height: auto;
   padding: 10px 0 10px 0;
@@ -1530,6 +1530,7 @@ body {
 }
 /************* Logo *************/
 #site-logo {
+  padding: 15px 23px 13px 0;
   min-width: 220px;
   max-width: 100%;
   display: inline-block;
@@ -1665,7 +1666,7 @@ body {
   float: left;
 }
 #menu-primary-items > li a {
-  color: #aaaaaa;
+  color: black;
 }
 #menu-primary-items > li > a {
   padding: 15px 10px;
@@ -2486,7 +2487,6 @@ body {
   margin: 0 0 50px;
 }
 #sidebar-primary .widget-title {
-  color: #aaaaaa;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
