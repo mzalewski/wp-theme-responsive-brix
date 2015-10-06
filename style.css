@@ -2714,6 +2714,9 @@ body {
 .content-block-style4 .content-block-content.no-visual {
   margin-left: 0;
 }
+.content-block-visual.content-block-image {
+    min-height: 13em;
+}
 /************* Social Icons Widget *************/
 .social-icons-icon {
   display: inline-block;
