@@ -660,7 +660,6 @@ blockquote {
   margin-left: 5px;
   display: block;
   font-style: italic;
-  text-transform: uppercase;
   color: #aaaaaa;
   font-size: 1.28571429em;
   clear: both;
@@ -1937,6 +1936,8 @@ body {
   margin-bottom: 1.71428571em;
   display: block;
   zoom: 1;
+  color: black;
+  font-size: 16px;
 }
 .entry-the-content p:first-child,
 .entry-the-content h1:first-child,
@@ -2714,9 +2715,11 @@ body {
 .content-block-style4 .content-block-content.no-visual {
   margin-left: 0;
 }
+
 .content-block-visual.content-block-image {
     min-height: 13em;
 }
+
 /************* Social Icons Widget *************/
 .social-icons-icon {
   display: inline-block;
