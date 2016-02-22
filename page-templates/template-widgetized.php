@@ -41,10 +41,10 @@ get_header(); // Loads the header.php template. ?>
 					<?php break;
 
 				// Display Widget Area D
-				case 'area_d':
+				case 'area_d': case 'area_e':
 
-					$area_d_left = is_active_sidebar( 'widgetized-template-area_d_1' );
-					$area_d_right = is_active_sidebar( 'widgetized-template-area_d_2' );
+					$area_d_left = is_active_sidebar( 'widgetized-template-'.$key.'_1' );
+					$area_d_right = is_active_sidebar( 'widgetized-template-'.$key.'_2' );
 
 					if ( !$area_d_left && !$area_d_right ) { // None has widgets
 						continue;
@@ -61,14 +61,14 @@ get_header(); // Loads the header.php template. ?>
 							<div class="grid-row"><?php
 
 								if ( $area_d_left ): ?>
-									<div id="widgetized-template-area_d_left" class="<?php echo $area_d_left_span; ?>">
-										<?php dynamic_sidebar( 'widgetized-template-area_d_1' ); ?>
+									<div id="widgetized-template-<?php echo sanitize_html_class( $key ); ?>_left" class="<?php echo $area_d_left_span; ?>">
+										<?php dynamic_sidebar( 'widgetized-template-'.$key.'_1' ); ?>
 									</div><?php
 								endif;
 
 								if ( $area_d_right ): ?>
-									<div id="widgetized-template-area_d_right" class="<?php echo $area_d_right_span; ?>">
-										<?php dynamic_sidebar( 'widgetized-template-area_d_2' ); ?>
+									<div id="widgetized-template-<?php echo sanitize_html_class( $key ); ?>_right" class="<?php echo $area_d_right_span; ?>">
+										<?php dynamic_sidebar( 'widgetized-template-'.$key.'_2' ); ?>
 									</div><?php
 								endif; ?>
 

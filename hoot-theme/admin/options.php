@@ -511,7 +511,8 @@ function hootoptions_options() {
 			'area_b'      => '4,1',
 			'area_c'      => '5,1',
 			'area_d'      => '6,1',
-			'content'     => '7,0', ),
+			'content'     => '7,0',
+			'area_e'      => '8,1', ),
 		'type' => 'sortlist',
 		'settings' => array(
 			'hideable' => true,
@@ -523,12 +524,26 @@ function hootoptions_options() {
 			'area_b'      => __('Widget Area B', 'hoot'),
 			'area_c'      => __('Widget Area C', 'hoot'),
 			'area_d'      => __('Widget Area D-left / D-right', 'hoot'),
-			'content'     => __('Page Content', 'hoot'), ) );
+			'content'     => __('Page Content', 'hoot'),
+			'area_e'      => __('Widget Area E-left / E-right', 'hoot'), ) );
 
 	$options[] = array(
 		'name' => __('Widget Area D Widths', 'hoot'),
 		'desc' => __('Widths for D-Left and D-Right Areas', 'hoot'),
 		'id' => 'widgetized_template_area_d_width',
+		'std' => '50-50',
+		'type' => 'select',
+		'options' => array(
+			'50-50' => __('50 50', 'hoot'),
+			'33-66' => __('33 66', 'hoot'),
+			'66-33' => __('66 33', 'hoot'),
+			'25-75' => __('25 75', 'hoot'),
+			'75-25' => __('75 25', 'hoot'), ) );
+
+	$options[] = array(
+		'name' => __('Widget Area E Widths', 'hoot'),
+		'desc' => __('Widths for E-Left and E-Right Areas', 'hoot'),
+		'id' => 'widgetized_template_area_e_width',
 		'std' => '50-50',
 		'type' => 'select',
 		'options' => array(
@@ -548,7 +563,8 @@ function hootoptions_options() {
 			'area_b'      => __('Widget Area B', 'hoot'),
 			'area_c'      => __('Widget Area C', 'hoot'),
 			'area_d'      => __('Widget Area D', 'hoot'),
-			'content'     => __('Page Content Area', 'hoot'), ) );
+			'content'     => __('Page Content Area', 'hoot'),
+			'area_e'      => __('Widget Area E', 'hoot'), ) );
 
 	$options[] = array(
 		'name' => $slider1_label,

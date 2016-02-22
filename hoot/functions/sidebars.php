@@ -114,6 +114,8 @@ function hoot_widgetized_template_register_sidebars() {
 			'area_c' => __('Widgetized Template - Area C', 'hoot'),
 			'area_d_1' => __('Widgetized Template - Area D Left', 'hoot'),
 			'area_d_2' => __('Widgetized Template - Area D Right', 'hoot'),
+			'area_e_1' => __('Widgetized Template - Area E Left', 'hoot'),
+			'area_e_2' => __('Widgetized Template - Area E Right', 'hoot'),
 		);
 
 		/* Allow changing widget areas by the theme. */
